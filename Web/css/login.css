@@ -1,0 +1,311 @@
+.loginLoading{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 200;
+}
+.loginLoading-bg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1rem 3rem;
+    width: 35.625rem;
+    height: 29.6875rem;
+    background: url("../img/login/loginBg.png") no-repeat center;
+    background-size: 100%;
+    box-sizing: border-box;
+}
+.login-title{
+    height: 3.75rem;
+    /* background: darkcyan; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size:1.875rem ;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.login-title>div{
+    width:4.75rem;
+    text-align: center;
+    cursor: pointer;
+}
+.login-title-device{
+    background: url("../img/login/q.png") no-repeat center;
+    background-size: 100%;
+}
+.login-input{
+    display: block;
+    width: 27rem;
+    height: 3rem;
+    /* margin-top: 2rem; */
+    background: rgb(251, 243, 232);
+    border: 1px solid #A99B8C;
+    border-radius: 10px;
+    outline: none; 
+    padding-left: 2rem;
+    font-size: 1.4rem;
+}
+
+    /* 默认信息placeholder的颜色和字体 */
+::-webkit-input-placeholder {   
+    color: #A99B8C;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.login-code{
+    position: relative;
+    height: 5rem;
+}
+.login-code-left{
+    position: absolute;
+    right: 1rem;
+    top:50%;
+    transform: translateY(-90%);
+    font-weight: 400;
+    color: #B55829;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.login-code-time{
+    cursor: not-allowed;
+}
+.loginAgree{
+    height: 3.2rem;
+    display: flex;
+    align-items: start;
+    font-size: 1.1rem;
+}
+.loginAgree a{
+    text-decoration: none;
+    color: #B55829;
+}
+.loginAgree-icon{
+    position: relative;
+    margin-right: 1.2rem;
+    height: 1.125rem;
+    padding-top: .25rem;
+    /* margin-bottom: 2rem; */
+    /* width: 1.125rem; */
+}
+.loginAgree-icon .agree-self{
+    width: 1.5rem;
+    display: block;
+}
+.loginAgree .agree-text{
+    font-size: 1.25rem;
+}
+.loginAgree-icon-g{
+    position: absolute;
+    top: -0.1875rem;
+    left: 0;
+    pointer-events: none;
+    width: 2.5rem;
+}
+.login-submit{
+    width: 100%;
+    margin-top: 1rem;
+}
+.login-submit>img{
+    width: 100%;
+}
+.login-statement{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.125rem;
+}
+.login-close{
+    position: absolute;
+    top: -1rem;
+    right: -4rem;
+    width: 3.125rem;
+    cursor: pointer;
+}
+.login-close>img{
+    width: 100%;
+}
+.inCode{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 100; 
+}
+.inCode-bg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 35.625rem;
+    height: 21.625rem;
+    background: url("../img/lottery/bgno.png") no-repeat center;
+    background-size: 100%;
+    box-sizing: border-box;
+    font-size: 1.375rem;
+    font-family: "";
+}
+.inCode-bg-str{
+    width: 32rem;
+    font-weight: 400;
+    color: #010101; 
+    font-size: 1.375rem;
+    margin: auto;
+    margin-top: 8rem;
+    text-align: center;
+}
+.inCode-bg-button{
+    display: flex;
+    height: 3.75rem;
+    width: 30rem;
+    /* background: darkcyan; */
+    margin: auto;
+    margin-top: 5rem;
+    justify-content: space-between;
+}
+#loginSelf{
+    color: rgb(233,220,205);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+#loginButton{
+    cursor: pointer;
+}
+.loadingSelf{
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+}
+.loadingSelf>div{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.loadingSelf img{
+    width: 7.5rem;
+}
+#to_top{
+    position: fixed;
+    z-index: 10;
+    bottom:1rem;
+    right: 3rem;
+    width: 2.8125rem;
+    height: 4.3125rem;
+    display: none;
+    /* background: red; */
+}
+#to_top>img{
+    width: 100%;
+}
+.link{
+    color: #B55829;
+    text-decoration: none;
+}
+.pvLoading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.kvStyle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.ceshi-word{
+    font-weight: 700;
+    color: red;
+}
+.lo{
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+}
+.login-phone{
+    height: 5rem;
+    position: relative;
+}
+.waringSelf{
+    font-size: .9rem;
+    color: red;
+    display: block;
+    height: 2rem;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.dropdown-menu{
+    transform: translate3d(0px, 40px, 0px)!important;
+    font-size: 1.25rem;
+}
+.qudao-choose{
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.qudao-choose>img{
+    width: 10.25rem;
+}
+.qudao-s{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.qudao-s img{
+    width: 26.5rem;
+}
+.title-active{
+    border-bottom: 1px solid #B55829;
+}
+.passContent{
+    margin-top: 3rem;
+}
+@keyframes rotateSelf{
+    from{
+        transform: rotate(0);
+    }
+    to{
+       transform: rotate(360deg); 
+    }
+}
+.role-input{
+    display: block;
+    width: 27rem;
+    height: 3rem;
+    /* margin-top: 2rem; */
+    background: rgb(251, 243, 232);
+    border: 1px solid #A99B8C;
+    border-radius: 10px;
+    outline: none; 
+    padding-left: 2rem;
+    font-size: 1.4rem;
+}
+.qudaoShare-title{
+    width: 18.1875rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:2rem;
+}
+.qudaoShare-title img{
+    width: 100%;
+}

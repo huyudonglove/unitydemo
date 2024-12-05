@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background: black;
+            overflow: hidden;
+        }
+        .img{
+            position: absolute;
+            height: 100vh;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    </style>
+    <title>后千禧时代：司辰的年度调查报告</title>
+    <meta name="description" content="《重返未来：1999》一周年快乐！快来查看属于司辰的年度数据吧！">
+    <meta name="keywords" content="重返未来周年庆、重返未来1.9新主线、重返未来1999、新角色露西、新角色卡卡尼亚">
+</head>
+<body>
+    <img src="./img/PC.png" alt="" class="img">
+</body>
+<script src="./script/judgeMachine.js"></script>
+<script>
+     if(isComputerOrPhone()=="mobile"){
+        window.location.href="./index.html" 
+    }
+</script>
+</html>

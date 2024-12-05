@@ -1,0 +1,333 @@
+<!-- If there have any bug,plz contact email huyd.we@qq.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/alert.css">
+    <link rel="stylesheet" href="./script/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/user.css">
+    <link rel="stylesheet" href="./css/fenxiang.css">
+    <link rel="stylesheet" href="./css/juanfen.css">
+    <title>雾都迷踪·乌卢鲁预选赛</title>
+    <meta name="description" content="《重返未来：1999》2.3版本「圣火纪行：东区黎明」预热网页活动正式开启！">
+    <meta name="keywords" content="重返未来1999、重返未来2.3版本、新角色笃笃骨、新角色纸信圈儿、新角色宽檐帽">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        iframe{
+            position: absolute;
+            overflow: hidden;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .test{
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+        }
+        #bg-div{
+          position: absolute;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+    </style>
+   
+</head>
+<body id="body">
+    <div class="allAlert hide">
+        <div class="allAlert-str fadeInUpSelf"></div>
+    </div>
+    <div class="fenxiang" style="display: none;" onclick="h5Event.hideFenxiang()">
+        <!-- <img src="./img/fenxiang.png" alt=""> -->
+    </div>
+    <div id="bg-div">
+        <iframe src="./Build/index.html" frameborder="0" id="myIframe"></iframe>
+    </div>
+    
+    <div class="loading hide" >
+      <div class="cover-bg"></div>
+      <div class="choose hide">
+        <img src="./img/1bg.png" alt="" />
+        <div class="qudao">
+          <div class="close" style="opacity: 1;" onclick="h5Event.closeLoading()">
+            <img src="./img/c.png" alt="" />
+          </div>
+          <div class="title">请选择渠道</div>
+          <div class="qudao-choose">
+            <img src="./img/login/guan.png" alt="" onclick="h5Event.denglu(1)">
+            <img src="./img/login/feiguan.png" alt="" onclick="h5Event.denglu(2)">
+          </div>
+          <div class="qudao-s">
+            <img src="./img/login/s.png" alt="" />
+          </div>
+        </div>
+        <div class="phone hide" >
+          <div class="close"  style="opacity: 1;" onclick="h5Event.closeLoading()">
+            <img src="./img/c.png" alt="" />
+          </div>
+          <div class="title">
+            <span class="title-code title-active" onclick="h5Event.codeOrPass('code')">
+              验证码登录
+            </span>
+            <span class="title-pass" onclick="h5Event.codeOrPass('pass')">
+              密码登录
+            </span>
+          </div>
+          <div class="lo loPhone">
+            <div class="login-phone">
+              <input type="text" class="login-input phoneNum" placeholder="请输入您的手机号" />
+              <span class="waringSelf phoneWaring"></span>
+            </div>
+
+            <div class="login-code">
+              <input type="text" class="login-input code" placeholder="请输入短信验证码" />
+              <button class="login-code-left login-code-button" onclick="h5Event.getCode()">获取验证码</button>
+              <span class="login-code-left login-code-time hide" >获取验证码(<span class="time-code">60</span>S)</span>
+              <span class="waringSelf codeWaring"></span>
+            </div>
+          </div>
+          <div class="passContent hide">
+              <div class="login-phone">
+                <input type="text" class="login-input account" placeholder="请输入您的账号/邮箱" />
+                <span class="waringSelf accountWaring"></span>
+             </div>
+             <div class="login-code">
+              <input type="password" class="login-input password" placeholder="请输入您的密码" />
+              <span class="waringSelf passWaring"></span>
+            </div>
+          </div>
+          <div class="loginAgree">
+              <div class="loginAgree-icon pointer">
+                <img src="./img/login/ju.png" alt="" onclick="h5Event.agreeSelf()" class="agree-self" />
+                <img src="./img/login/g.png" alt="" class="loginAgree-icon-g hide"  />
+              </div>
+              <div class="agree-text">
+                我已详细阅读并同意<a href="https://re.bluepoch.com/home/agreement.html?2" target="_blank" rel="noopener noreferrer">《深蓝用户协议》</a> 和<a
+                  href="https://re.bluepoch.com/home/agreement.html?1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >《隐私政策》</a
+                >
+              </div>
+          </div>
+          <div class="next" onclick="h5Event.loginButton()">
+            <img src="./img/d.png" alt="" />
+          </div>
+        </div>
+        <div class="roleId hide" >
+          <div class="close" style="opacity: 1;" onclick="h5Event.closeLoading()">
+            <img src="./img/c.png" alt="" />
+          </div>
+          <div class="title">角色信息登录</div>
+          <div class="lo">
+            <div class="login-phone">
+              <input type="text" class="login-input roleNum" placeholder="请输入角色ID" />
+              <span class="waringSelf roleWaring hide" >请输入角色ID</span>
+            </div>
+            <div class="login-code">
+              <input type="text" class="role-input code" placeholder="请输入游戏内验证码" />
+              <button class="login-code-left role-code-button" onclick="h5Event.getRoleCode()">获取验证码</button>
+              <span class="login-code-left role-code-time hide" >获取验证码(<span class="role-time-code">60</span>S)</span>
+              <span class="waringSelf codeWaring hide">请输入验证码</span>
+            </div>
+            <!-- <div class="idMsg">*游戏内左上角进入个人信息界面点击角色ID进行复制</div> -->
+
+            <div class="loginAgree">
+              <div class="loginAgree-icon pointer">
+                <img src="./img/login/ju.png" alt="" onclick="h5Event.agreeSelf()"  class="agree-self" />
+                <img src="./img/login/g.png" alt="" class="loginAgree-icon-g hide" />
+              </div>
+              <div>
+                我已详细阅读并同意<a href="https://re.bluepoch.com/home/agreement.html?2" target="_blank" rel="noopener noreferrer">《深蓝用户协议》</a> 和<a
+                  href="https://re.bluepoch.com/home/agreement.html?1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >《隐私政策》</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="next" onclick="h5Event.loginRoleJudge()">
+            <img src="./img/d.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="logout hide">
+        <img src="./img/logout.png" class="logout-bg" alt="" />
+        <div class="phone-logout">
+          <div class="close" style="opacity: 1;" onclick="h5Event.closeLoading()">
+            <img src="./img/c.png"  alt="" />
+          </div>
+          <div class="title out">请确认是否退出当前账号</div>
+          <div class="next" onclick="h5Event.logoutButton()">
+            <img src="./img/ob.png" alt="" />
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div class="juanfenLoading" style="display: none;">
+        <div class="juanfenLoading-bg">
+          <img src="./img/c.png" alt="" srcset="" class="juanfenLoading-close" onclick="h5Event.closeJuan()">
+          <img src="./img/logout.png" alt="" srcset="" class="juanfenLoading-img">
+          <div class="juanfenLoading-str">确定重新开始？</div>
+          <div class="juanfenLoading-button">
+            <img src="./img/q2.png" alt="" class="juanfenLoading-buttonq" onclick="h5Event.closeJuan()">
+            <img src="./img/q1.jpg" alt="" class="juanfenLoading-buttonq" onclick="h5Event.juanPost()">
+          </div>
+        </div>
+    </div>
+    <div id="shareImg" style="display: none;" onclick="h5Event.hideSave()">
+        <div>
+          <img src="" alt="" id="endImg">
+          <p >长按保存图片</p>
+          <!-- <img src="./img/shemei/s.png" alt="" id="endImgQudao" style="display: none;" onclick="h5Event.qudao()"> -->
+        </div>
+        
+    </div>
+
+    <div class="zhoubian"  style="display: none;">
+        <div class="zhoubian-img" style="position: relative; ">
+            <img src="./img/shemei/bg.png" alt="" class="zhoubian-img1">
+            <p style="position: absolute;top: 0;left: 0; font-size: 2rem; padding: 3.5rem;box-sizing: border-box;">2024/6/27 6:00 - 10:00 
+          停服更新维护中<br>
+          <br>
+          
+
+          目前游戏服务器暂时无法登录，请司辰待维护结束后再试，感谢司辰的理解与支持。</p>
+        </div>
+    </div>
+    <div class="pvVideo"  onclick="h5Event.hidePv()" style="display:none ;">
+        <video src="https://webres.bluepoch.com/pv/20241023.mp4" controls id="pvV"></video>
+    </div>
+    <div id="qudaoShare" onclick="h5Event.hideQudao()" style="display: none;">    
+          <div style="position: relative;">
+            <img src="./img/shemei/bg.png" alt="" class="qudaoShare-bg">
+            <div class="qudaoShare-title">
+             <img src="./img/shemei/q.png" alt="" srcset="">
+            </div>
+            <div class="qudaoShare-con">
+              <img src="./img/shemei/w.png" alt="" class="qudaoShare-i" onclick="h5Event.judgeShareSina();h5Event.NshushuMaidian(`btn_home_shareweibo_click`)">
+              <a href="https://t.bilibili.com/" target="_blank" onclick="h5Event.sharBili3(`btn_sharebilibili_click`);h5Event.NshushuMaidian(`btn_home_sharebili_click`)"><img src="./img/shemei/b.png" alt="" class="qudaoShare-i"></a>
+              <img src="./img/shemei/l.png" alt="" class="qudaoShare-i" onclick="h5Event.copyUrl3();h5Event.NshushuMaidian(`btn_home_shareCopy_click`)">
+              
+            </div>
+            <p>点击空白处关闭</p>
+            
+          </div>
+    </div>
+    <div class="loadingSelf" style="display: none;">
+        <div>
+            <img src="./img/lo.png" alt="" class="lo-rotate">
+        </div> 
+    </div>
+</body>
+<script src="./script/md5.min.js"></script>
+<script src="./script/md5.js"></script>
+<script src="./script/jquery-1.11.3.min.js"></script>
+<script src="./script/bootstrap.bundle.min.js"></script>
+<script src="./script/crypto-js.js"></script>
+
+<script src="./js/template.js"></script>
+<script src="./js/index.js"></script>
+<script src="./script/judgeMachine.js"></script>
+<script src="./script/cos.js"></script>
+<script src="./shushu/thinkingdata.umd.min.js"></script>
+<script src="./shushu/index.js"></script>
+<script src="./js/api.js"></script>
+<!-- <script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.15.1/vconsole.min.js"></script>
+<script>
+  var vConsole = new VConsole()
+</script> -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ba81d9ece54186bc0e37f54c5173a6d8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+  var DeviceOrientation = 'portrait';
+  function changeImg(type){
+    if(type){
+       
+       $("#shareImg").find("div").css("transform","rotate(90deg)");
+       $("#qudaoShare").children().first().css("transform","rotate(90deg)");
+       $(".juanfenLoading-bg").css("transform","rotate(90deg)"); 
+       $("#pvV").css("transform","rotate(90deg)"); 
+       $(".logout").css("transform","translate(-50%,-50%) rotate(90deg)");
+       
+       $("#myIframe").css("transform","translate(-50%,0) rotate(90deg)");  
+
+    }else{
+       
+       $("#shareImg").find("div").css("transform","rotate(0)");
+       $("#qudaoShare").children().first().css("transform","rotate(0)");
+       $(".juanfenLoading-bg").css("transform","rotate(0)"); 
+       $("#pvV").css("transform","rotate(0)");
+       $(".logout").css("transform","translate(-50%,-50%) rotate(0)");
+       $("#myIframe").css("transform","translate(-50%,0) rotate(0)"); 
+    }
+       
+  }
+  function JudgeWidthOrHeight(h,w){
+    let h2 = (16/9)*w;
+    let w2 = (9/16)*h;
+    //console.log(h2,w2,55555);
+    var ifa=document.getElementById('myIframe');
+    if(h2>h){
+      ifa.style.width=h+'px';
+      ifa.style.height=w2+'px';
+    }else{
+      ifa.style.width=h2+'px';
+      ifa.style.height=w+'px';
+    }
+  }
+  function setFont() {
+    var html = document.documentElement || document.body;
+    // console.log($(`#body`).innerHeight())
+    var clientHeight;
+    if(clientHeight)return
+    var height = $(`#body`).innerHeight()
+    var width = $(`#body`).innerWidth()
+    if(height > width){
+      console.log(width,height,1111111)
+      
+      DeviceOrientation = 'portrait'
+      JudgeWidthOrHeight(height,width);  
+      
+      clientHeight =  width;
+       
+      changeImg(1)
+    }else{
+      
+      
+      DeviceOrientation = 'landscape';
+      var width = (1920 / 1080) * height;
+        //  console.log(width,height,5)
+      var ifa=document.getElementById('myIframe');
+       // console.log(ifa)
+      ifa.style.width=width+'px';
+      ifa.style.height=height+'px';
+      
+      clientHeight = width;
+      changeImg()
+    }
+     html.style.fontSize = 16 * (clientHeight / 1080)+ "px";
+    }
+  window.addEventListener("resize", setFont, false);
+  setFont();
+
+</script> 
+</html>

@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "sen";
+    src: url("../font/Serif.ttf");
+}
+*{
+    font-family:"sen";
+}
+.fenxiang{
+    position: absolute;
+    z-index: 100;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fenxiang>img{
+    width: 80%;
+}
+#shareImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+#shareImg2{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 10%; 
+}
+.shareI{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.sharebutton{
+    width: 50%;
+    position: absolute;
+    bottom: 6%;
+    left: 48%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.sharebutton2{
+    height: 100%;
+    margin-left: 6rem;
+}
+.sharestr{
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-49%);
+    width: 11.4375rem;
+    height: 6.9375rem;
+    background: url("../img/end/c.png") no-repeat center;
+    background-size: 100%;
+}
+.zhoubian{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.zhoubian-img{
+    width: 43.875rem;
+    position: relative;
+}
+.zhoubian-img1{
+    width: 100%;
+}
+.zhoubian-img2{
+    position: absolute;
+    top: -2rem;
+    width: 2.9375rem;
+    right: 1.6875rem;
+}
+.zhoubian-img3{
+   position: absolute;
+   bottom: 9rem;
+   left: 10rem;
+   width: 8.25rem;   
+}
+.zhoubian-img4{
+   position: absolute;
+   bottom: 9rem;
+   right: 15rem;
+   width: 8.25rem;   
+}
+.pvVideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pvVideo>video{
+    width: 90%;
+    background: rgb(0, 0, 0);
+}
+.chongbutton{
+    position: absolute;
+    bottom: 7%;
+    right: 10%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 2.8125rem;
+}
+.chongbutton2{
+    width: 2.8125rem;
+    margin-left: 1rem;
+    animation: rotateSelf 3s infinite linear;
+}
+.shareImg-content{
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    /* background: cadetblue; */
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5.5625rem;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#endImg{
+    width: 48rem;
+}
+#endImgQudao{
+    width: 6.5625rem;
+}
+#shareImg div{
+    text-align: center;
+    color: rgba(255, 255, 255, .8);
+}
+#qudaoShare{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0,.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.qudaoShare-bg{
+    width: 36.3125rem;
+}
+.qudaoShare-con{
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%,-50%);
+    width: 34rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.qudaoShare-i{
+    width: 4.5rem;   
+}
+.qudaoShare-i:nth-child(3){
+    width: 6.4rem;
+    height: 7rem;
+}
+#qudaoShare p{
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, .8);
+    text-align: center;
+}
+.loadingSelf{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.7);
+    z-index: 1000;
+}
+@keyframes changeRotate {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+.loadingSelf img {
+    width: 7.5rem;
+    animation: changeRotate infinite 10s linear;
+}

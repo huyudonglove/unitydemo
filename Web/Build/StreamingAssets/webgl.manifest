@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 1094472329
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: play
+      Dependencies: {}
