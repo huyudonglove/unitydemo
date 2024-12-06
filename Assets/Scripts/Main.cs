@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -7,6 +8,8 @@ using UnityEngine.SceneManagement;
 
 public class Main : MonoBehaviour
 {
+    [DllImport("__Internal")]
+    private static extern void Hello();
     // Start is called before the first frame update
     public AudioSource BgmAudioSource;
     public GameObject MusicOn;
@@ -38,7 +41,7 @@ public class Main : MonoBehaviour
     }
     public void ChangeScene()
     {
-        SceneManager.LoadScene("Play");
+        SceneManager.LoadScene("play");
         SceneManager.sceneLoaded += HideButton;
         //+=c#·½·¨¸³Öµ
     }
@@ -47,5 +50,12 @@ public class Main : MonoBehaviour
         //BgmAudioSource.Play();
         ChangeButton.SetActive(false);
     }
-    
+    public void TestMsg()
+    {
+        Hello();
+    }
+    public void getMsg()
+    {
+
+    }
 }

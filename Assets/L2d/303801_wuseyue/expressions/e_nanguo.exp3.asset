@@ -1,0 +1,243 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58229d41c24a7fb4aafd097ab43bcc2a, type: 3}
+  m_Name: e_nanguo.exp3
+  m_EditorClassIdentifier: 
+  Type: Live2D Expression
+  FadeInTime: 0.6
+  FadeOutTime: 0.6
+  Parameters:
+  - Id: Param191
+    Value: 0
+    Blend: 1
+  - Id: Param172
+    Value: 0
+    Blend: 1
+  - Id: Param173
+    Value: 0
+    Blend: 1
+  - Id: Param174
+    Value: 0
+    Blend: 1
+  - Id: Param175
+    Value: 0
+    Blend: 1
+  - Id: Param176
+    Value: 0
+    Blend: 1
+  - Id: Param177
+    Value: 0
+    Blend: 1
+  - Id: Param178
+    Value: 0
+    Blend: 1
+  - Id: Param179
+    Value: 0
+    Blend: 1
+  - Id: Param180
+    Value: 0
+    Blend: 1
+  - Id: Param181
+    Value: 0
+    Blend: 1
+  - Id: Param182
+    Value: 0
+    Blend: 1
+  - Id: Param183
+    Value: 0
+    Blend: 1
+  - Id: Param184
+    Value: 0
+    Blend: 1
+  - Id: Param185
+    Value: 0
+    Blend: 1
+  - Id: Param186
+    Value: 0
+    Blend: 1
+  - Id: Param187
+    Value: 0
+    Blend: 1
+  - Id: Param188
+    Value: 0
+    Blend: 1
+  - Id: Param189
+    Value: 0
+    Blend: 1
+  - Id: Param190
+    Value: 0
+    Blend: 1
+  - Id: PARAM_ANGLE_X
+    Value: 0
+    Blend: 1
+  - Id: PARAM_ANGLE_Y
+    Value: 0
+    Blend: 1
+  - Id: PARAM_ANGLE_Z
+    Value: 0
+    Blend: 1
+  - Id: PARAM_EYE_L_OPEN
+    Value: 0
+    Blend: 1
+  - Id: PARAM_EYE_L_SMILE
+    Value: 0
+    Blend: 1
+  - Id: PARAM_EYE_R_OPEN
+    Value: 0
+    Blend: 1
+  - Id: PARAM_EYE_R_SMILE
+    Value: 0
+    Blend: 1
+  - Id: PARAM_EYE_BALL_X
+    Value: 0
+    Blend: 1
+  - Id: PARAM_EYE_BALL_Y
+    Value: 0
+    Blend: 1
+  - Id: PARAM_BROW_L_Y
+    Value: 0
+    Blend: 1
+  - Id: PARAM_BROW_R_Y
+    Value: 0.3
+    Blend: 1
+  - Id: PARAM_BROW_L_X
+    Value: 0
+    Blend: 1
+  - Id: PARAM_BROW_R_X
+    Value: -0.2
+    Blend: 1
+  - Id: PARAM_BROW_L_ANGLE
+    Value: 0.1
+    Blend: 1
+  - Id: PARAM_BROW_R_ANGLE
+    Value: -0.2
+    Blend: 1
+  - Id: PARAM_BROW_L_FORM
+    Value: -0.2
+    Blend: 1
+  - Id: PARAM_BROW_R_FORM
+    Value: -0.3
+    Blend: 1
+  - Id: PARAM_MOUTH_FORM
+    Value: -0.5
+    Blend: 1
+  - Id: PARAM_MOUTH_OPEN_Y
+    Value: 1
+    Blend: 1
+  - Id: Param275
+    Value: 0
+    Blend: 1
+  - Id: Param234
+    Value: 0
+    Blend: 1
+  - Id: Param282
+    Value: 0
+    Blend: 1
+  - Id: Param281
+    Value: 0
+    Blend: 1
+  - Id: Param292
+    Value: 0
+    Blend: 1
+  - Id: Param293
+    Value: 0
+    Blend: 1
+  - Id: Param291
+    Value: 0
+    Blend: 1
+  - Id: Param294
+    Value: 0
+    Blend: 1
+  - Id: Param295
+    Value: 0
+    Blend: 1
+  - Id: Param296
+    Value: 0
+    Blend: 1
+  - Id: Param288
+    Value: 0
+    Blend: 1
+  - Id: Param290
+    Value: 0
+    Blend: 1
+  - Id: Param297
+    Value: 0
+    Blend: 1
+  - Id: Param298
+    Value: 0
+    Blend: 1
+  - Id: Param33
+    Value: 0
+    Blend: 1
+  - Id: Param243
+    Value: 0
+    Blend: 1
+  - Id: Param237
+    Value: 1
+    Blend: 1
+  - Id: Param236
+    Value: 0
+    Blend: 1
+  - Id: Param235
+    Value: 0
+    Blend: 1
+  - Id: Param238
+    Value: 0
+    Blend: 1
+  - Id: Param240
+    Value: 0
+    Blend: 1
+  - Id: Param241
+    Value: 1
+    Blend: 1
+  - Id: Param239
+    Value: 0
+    Blend: 1
+  - Id: Param242
+    Value: 0
+    Blend: 1
+  - Id: PARAM_CHEEK
+    Value: 0
+    Blend: 1
+  - Id: PARAM_BODY_ANGLE_X
+    Value: 0
+    Blend: 1
+  - Id: PARAM_BODY_ANGLE_Y
+    Value: 0
+    Blend: 1
+  - Id: PARAM_BODY_ANGLE_Z
+    Value: 0
+    Blend: 1
+  - Id: Param165
+    Value: 0
+    Blend: 1
+  - Id: Param171
+    Value: 0
+    Blend: 1
+  - Id: PARAM_BREATH
+    Value: 0
+    Blend: 1
+  - Id: Param200
+    Value: 0
+    Blend: 1
+  - Id: Param201
+    Value: 0
+    Blend: 1
+  - Id: Param202
+    Value: 0
+    Blend: 1
+  - Id: Param203
+    Value: 0
+    Blend: 1
+  - Id: Param204
+    Value: 0
+    Blend: 1

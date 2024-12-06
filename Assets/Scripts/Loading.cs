@@ -21,7 +21,7 @@ public class Loading : MonoBehaviour
     }
     IEnumerator PreLoadScene()
     {
-        var str = Application.streamingAssetsPath + "/Play";
+        var str = Application.streamingAssetsPath + "/play";
         var request = UnityWebRequestAssetBundle.GetAssetBundle(str);
         request.SendWebRequest();
         

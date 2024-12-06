@@ -1,0 +1,282 @@
+{
+	"Type": "Live2D Expression",
+	"FadeInTime": 0.6,
+	"FadeOutTime": 0.6,
+	"Parameters": [
+		{
+			"Id": "PARAM_ANGLE_X",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ANGLE_Y",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ANGLE_Z",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_L_OPEN",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_L_SMILE",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_R_OPEN",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_R_SMILE",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_BALL_X",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_BALL_Y",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_Y",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_Y",
+			"Value": -0.2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_X",
+			"Value": -0.1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_X",
+			"Value": -0.1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_ANGLE",
+			"Value": -0.2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_ANGLE",
+			"Value": -0.2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_FORM",
+			"Value": 0.3,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_FORM",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": 0.5,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_OPEN_Y",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param275",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param234",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param282",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param281",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param292",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param293",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param291",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param294",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param295",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param296",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param288",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param290",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param297",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param298",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param33",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param243",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param237",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param236",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param235",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param238",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param240",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param241",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param239",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param242",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_CHEEK",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BODY_ANGLE_X",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BODY_ANGLE_Y",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BODY_ANGLE_Z",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param165",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param171",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BREATH",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param200",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param201",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param202",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param203",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "Param204",
+			"Value": 0,
+			"Blend": "Add"
+		}
+	]
+}

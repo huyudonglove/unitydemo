@@ -27,7 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,7 +36,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -62,8 +62,13 @@
   <ItemGroup>
     <Compile Include="Assets\ScriptObj\GameScript.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
+    <Compile Include="Assets\Scripts\WebMessageReceiver.cs" />
     <Compile Include="Assets\Scripts\Play.cs" />
     <Compile Include="Assets\Scripts\Loading.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\mcs.rsp" />
+    <None Include="Assets\csc.rsp" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1060,6 +1065,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Live2D.Cubism.Editor.csproj">
+      <Project>{940D0E82-885E-D047-AAB2-9171AD097BEE}</Project>
+      <Name>Live2D.Cubism.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Live2D.Cubism.csproj">
+      <Project>{A3C44B7C-08A5-DC4A-4364-78E560DB0566}</Project>
+      <Name>Live2D.Cubism</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

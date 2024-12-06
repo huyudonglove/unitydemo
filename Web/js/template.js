@@ -983,12 +983,7 @@ class numbers{
     playPvRenwu(){
         $(".pvVideo").show();
         $("#pvV")[0].play(); 
-        let data={
-            task1Status:1
-        }
-        unlockRenWuApi(data).then(()=>{
-            this.WunlockDetailApi()
-        })
+        
     }
     gotoQQ(){
         let data={
@@ -998,5 +993,13 @@ class numbers{
             this.WunlockDetailApi()
         })
         window.location.href =`https://re.bluepoch.com/qq/`;
+    }
+    Send(){
+        console.log(789);
+        let t ={
+                type:'Cunitytest',
+                data:789
+            }
+        this.frame.postMessage(t,"*");
     }
 }

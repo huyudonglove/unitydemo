@@ -18,12 +18,12 @@ public class Play : MonoBehaviour
         bgm = GameObject.Find("bgm");
         //bgm.GetComponent<AudioSource>().Stop();
         print(bgm);
-        var ss = GameObject.Find("AllCanvas");
-        print(ss);
-        var d =ss.GetComponent<Main>();
-        print(d.gameData);
-        gameData = d.gameData;
-        print(gameData.roleName);
+        //var ss = GameObject.Find("AllCanvas");
+        //print(ss);
+        //var d =ss.GetComponent<Main>();
+        //print(d.gameData);
+        //gameData = d.gameData;
+        //print(gameData.roleName);
     }
 
     // Update is called once per frame

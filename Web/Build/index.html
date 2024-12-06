@@ -149,16 +149,18 @@
 
       var script = document.createElement("script");
       script.src = loaderUrl;
+      var myGameInstance = null;
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
               }).then((unityInstance) => {
-               
-                fullscreenButton.onclick = () => {
-                  unityInstance.SetFullscreen(1);
-                };
+                myGameInstance = unityInstance;
+                window.addEventListener("message", function(event) {
+                  console.log(event);
+                  unityInstance.SendMessage("WebMessageReceiver", "Test");
+                }, false);
               }).catch((message) => {
-                alert(message);
+                console.log(message);
               });
             };
 
